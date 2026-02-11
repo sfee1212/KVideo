@@ -6,10 +6,17 @@
     "group": "normal",
     "priority": 1
   },
+    {
+    "id": "my_source_2",
+    "name": "lz源",
+    "baseUrl": "https://cj.lziapi.com/api.php/provide/vod/at/xml/",
+    "group": "normal",
+    "priority": 1
+  },
   {
     "id": "premium_source_1",
     "name": "lz资源",
-    "baseUrl": "https://cj.lziapi.com/api.php/provide/vod/at/xml/",
+    "baseUrl": "https://cj.lziapi.com/",
     "group": "premium",
     "enabled": true
   }
