@@ -1,5 +1,110 @@
 [
   {
+    "id": "WY",
+    "name": "无印源",
+    "baseUrl": "https://api.wsyzy.net/api.php/provide/vod/?ac=list",
+    "group": "normal",
+    "priority": 1
+  }, 
+  {
+    "id": "HN",
+    "name": "红牛源",
+    "baseUrl": "https://www.hongniuzy2.com/api.php/provide/vod/",
+    "group": "normal",
+    "priority": 1
+  },
+  {
+    "id": "MT",
+    "name": "茅台源",
+    "baseUrl": "https://caiji.maotaizy.cc/api.php/provide/vod/at/josn/",
+    "group": "normal",
+    "priority": 1
+  },
+  {
+    "id": "XL",
+    "name": "新浪源",
+    "baseUrl": "https://api.xinlangapi.com/xinlangapi.php/provide/vod/",
+    "group": "normal",
+    "priority": 1
+  },
+  {
+    "id": "SB",
+    "name": "速播源",
+    "baseUrl": "https://subocj.com/api.php/provide/vod/at/json",
+    "group": "normal",
+    "priority": 1
+  },
+  {
+    "id": "YZ",
+    "name": "优质源",
+    "baseUrl": "https://api.yzzy-api.com/inc/api_mac10_all.php",
+    "group": "normal",
+    "priority": 1
+  },
+  {
+    "id": "JS",
+    "name": "极速源",
+    "baseUrl": "https://jszyapi.com/api.php/provide/vod/at/json",
+    "group": "normal",
+    "priority": 1
+  },
+  {
+    "id": "HH",
+    "name": "豪华源",
+    "baseUrl": "https://hhzyapi.com/api.php/provide/vod/at/json",
+    "group": "normal",
+    "priority": 1
+  },
+  {
+    "id": "DB",
+    "name": "豆瓣源",
+    "baseUrl": "https://caiji.dbzy5.com/api.php/provide/vod/at/josn/",
+    "group": "normal",
+    "priority": 1
+  },
+  {
+    "id": "IK",
+    "name": "iku源",
+    "baseUrl": "https://ikunzyapi.com/api.php/provide/vod/",
+    "group": "normal",
+    "priority": 1
+  },
+  {
+    "id": "MD",
+    "name": "魔都源",
+    "baseUrl": "https://www.mdzyapi.com/api.php/provide/vod/?ac=list",
+    "group": "normal",
+    "priority": 1
+  },
+  {
+    "id": "36",
+    "name": "360源",
+    "baseUrl": "https://360zyzz.com/api.php/provide/vod/",
+    "group": "normal",
+    "priority": 1
+  },
+  {
+    "id": "YJ",
+    "name": "影剧源",
+    "baseUrl": "https://caiji.maotaizy.cc/api.php/provide/vod/at/josn/",
+    "group": "normal",
+    "priority": 1
+  },
+  {
+    "id": "DY",
+    "name": "电影天堂源",
+    "baseUrl": "http://caiji.dyttzyapi.com/api.php/provide/vod/at/xml/",
+    "group": "normal",
+    "priority": 1
+  },
+  {
+    "id": "BF",
+    "name": "暴风源",
+    "baseUrl": "https://bfzyapi.com/api.php/provide/vod/",
+    "group": "normal",
+    "priority": 1
+  },
+  {
     "id": "my_source_1",
     "name": "ruyi源",
     "baseUrl": "https://cj.rycjapi.com/api.php/provide/vod/?ac=list",
