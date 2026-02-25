@@ -22,7 +22,13 @@ class CacheManager {
     }
 
     private save(): void {
-        try { localStorage.setItem(METADATA_STORE, JSON.stringify(Object.fromEntries(this.metadata))); }
+        try {
+            const entriesObj = Array.from(this.metadata.entries()).reduce((acc, [key, val]) => {
+                acc[key] = val;
+                return acc;
+            }, {} as Record<string, CacheMetadata>);
+            localStorage.setItem(METADATA_STORE, JSON.stringify(entriesObj));
+        }
         catch (e) { console.error('[CacheManager] Save failed:', e); }
     }
 
