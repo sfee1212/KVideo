@@ -11,11 +11,11 @@ export function parseVideoTitle(title: string): { cleanTitle: string, quality?: 
     let quality: string | undefined;
     let cleanTitle = title;
 
-    const matches = [...title.matchAll(bracketRegex)];
+    const match = bracketRegex.exec(title);
 
-    if (matches.length > 0) {
+    if (match) {
         // Take the first bracket content as quality (usually what we want)
-        quality = matches[0][1];
+        quality = match[1];
         // Remove all brackets and their content from the title
         cleanTitle = title.replace(bracketRegex, '').trim();
     }
