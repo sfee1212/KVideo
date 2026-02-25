@@ -52,8 +52,12 @@ export function useSubscriptionSync() {
                 }
 
                 // Fetch all subscriptions in parallel for better performance
-                const results = await Promise.allSettled(
-                    subsToSync.map((sub: SourceSubscription) => fetchSourcesFromUrl(sub.url))
+                const results = await Promise.all(
+                    subsToSync.map((sub: SourceSubscription) =>
+                        fetchSourcesFromUrl(sub.url)
+                            .then(value => ({ status: 'fulfilled' as const, value }))
+                            .catch(reason => ({ status: 'rejected' as const, reason }))
+                    )
                 );
 
                 // Process results
